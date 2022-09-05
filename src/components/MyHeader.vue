@@ -8,8 +8,14 @@
                     <li v-for="(link, index) in links" :key="index" >
                         <a :href="link.url" :class="link.active?'active':''" >{{link.text}}</a>
                     </li>
+                    <li>
+                        <a href="#"><i class="search fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-primary bottone">Get Started</button>
+                    </li>
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -82,6 +88,16 @@ header {
                     border-bottom: 3px solid $text-color5;
                     color: $text-color5; 
                 }
+                .search {
+                    margin-left: 20px;
+                }
+            }
+            
+            .bottone {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 5px;
             }
         }
     }
