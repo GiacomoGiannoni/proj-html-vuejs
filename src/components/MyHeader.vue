@@ -19,12 +19,19 @@
             </div>
         </div>
     </nav>
+    <MyJumbotron />
   </header>
 </template>
 
 <script>
+
+import MyJumbotron from './MyJumbotron.vue';import '@/components/MyJumbotron.vue';
+
 export default {
     name: 'MyHeader',
+    components: {
+    MyJumbotron,
+},
     data() {
         return {
             links: [
@@ -60,11 +67,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../styles/general.scss';
-
-header {
-    height: 50px;
     .logo {
         height: 50px;
     }
@@ -101,5 +105,4 @@ header {
             }
         }
     }
-}
 </style>
