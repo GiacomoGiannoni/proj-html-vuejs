@@ -75,7 +75,7 @@ export default {
         margin: 0px 20px;
     };
     p {
-        color: $text-color6;
+        color: $text-color4;
     };
     ul {
         list-style-type: "\2713";
