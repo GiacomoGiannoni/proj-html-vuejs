@@ -7,7 +7,7 @@
                 <ul>
                     <li v-for="(link, index) in links" :key="index" >
                         <a :href="link.url" :class="link.active?'active':''" >{{link.text}}</a>
-                    </li>
+                    </li>   
                     <li>
                         <a href="#"><i class="search fa-solid fa-magnifying-glass"></i></a>
                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
