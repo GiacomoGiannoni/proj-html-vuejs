@@ -7,10 +7,16 @@
                 <ul>
                     <li v-for="(link, index) in links" :key="index" >
                         <a :href="link.url" :class="link.active?'active':''" >{{link.text}}</a>
-                    </li>   
+                    </li>
                     <li>
                         <a href="#"><i class="search fa-solid fa-magnifying-glass"></i></a>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping position-relative">
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg">
+                                0
+                                </span>
+                            </i>
+                        </a>
                     </li>
                     <li>
                         <button type="button" class="btn btn-primary bottone">Get Started</button>
@@ -94,6 +100,10 @@ export default {
                 }
                 .search {
                     margin-left: 20px;
+                }
+                .bg {
+                    background-color: $background-color6;
+                    color: $text-color1;
                 }
             }
             

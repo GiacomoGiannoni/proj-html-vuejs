@@ -8,8 +8,27 @@
                 </div>
             </div>
             <div class="row justify-content-center mt-5 mb-5">
-                <div class="col-4">
-                    <img class="dimensioni" src="@/assets/img/StaticMapService.GetMapIma.png" alt="mappa">                
+                <div class="col-4 position-relative">
+                    <img class="dimensioni position-relative" src="@/assets/img/StaticMapService.GetMapIma.png" alt="mappa"> 
+                    <div class="mappa row position-absolute top-0 start-15">
+                        <div class="col-auto indirizzo">
+                            <h6>Storey Ave</h6>
+                            <p>San Francisco, California 94129</p>
+                            <a href="#">Visualizza mappa più grande</a>
+                        </div>
+                        <div class="col-auto direction">
+                            <i class="fa-solid fa-diamond-turn-right"></i>
+                            <p>indi...</p>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-50 end-0 me-5">
+                        <div class="zoom">
+                            <span>+</span>
+                        </div>
+                        <div class="zoom">
+                            <span class="ms-1">-</span>
+                        </div>
+                    </div>               
                 </div>
                 <div class="col-4">
                     <img class="logo-dim mb-5" src="@/assets/img/35.png" alt="logo">
@@ -78,6 +97,43 @@ main {
         }
         .dimensioni {
             width: 400px;
+        }
+        .mappa {
+            background-color: $background-color1;
+            margin: 5px 0px 0px 12px;
+            box-shadow: 2px 2px 2px $text-color4;
+            .indirizzo {
+                p {
+                    font-size: 10px;
+                    color: $text-color4;
+                }
+                a {
+                    font-size: 10px;
+                    color: $text-color5;
+                    text-decoration: none;
+                }          
+            }
+            .direction {
+                padding: 5px;
+                i {
+                    color: $text-color5;
+                    font-size: 20px;
+                }
+                p {
+                    color: $text-color5;
+                    font-size: 13px;
+                }
+            }
+        }
+        .zoom {
+            padding: 2px;
+            background-color: $background-color1;
+            border: 1px solid $text-color4;
+            font-size: 30px;
+            font-weight: bold;
+            span {
+                margin: auto;
+            }
         }
         .logo-dim {
             width: 90px;
