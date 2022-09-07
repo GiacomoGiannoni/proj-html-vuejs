@@ -97,9 +97,9 @@ export default {
 
 main {
     background: url("@/assets/img/14.png") no-repeat -50%;
-    margin-top: 100px;
+    background-color: $background-color1!important;
+    padding: 100px;
     .container {
-        margin-top: 100px;
         p {
             margin-top: 20px;
             color: $text-color4;

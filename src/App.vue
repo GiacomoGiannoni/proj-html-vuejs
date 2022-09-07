@@ -20,8 +20,9 @@ export default {
 
 <style lang="scss">
 @import '~@fortawesome/fontawesome-free/css/all.css';
+@import './styles/general.scss';
 
-#app {
-  height: 100vh;
+html {
+  background-color: $background-color2;
 }
 </style>
