@@ -19,7 +19,7 @@
                         </a>
                     </li>
                     <li>
-                        <button type="button" class="btn btn-primary bottone">Get Started</button>
+                        <button type="button" class="btn btn-primary bottone ms-4">Get Started</button>
                     </li>
                 </ul>
             </div>

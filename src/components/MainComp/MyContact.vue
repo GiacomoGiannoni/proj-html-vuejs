@@ -128,7 +128,7 @@ main {
         .zoom {
             padding: 2px;
             background-color: $background-color1;
-            border: 1px solid $text-color4;
+            border: 1px solid $text-color6;
             font-size: 30px;
             font-weight: bold;
             span {
