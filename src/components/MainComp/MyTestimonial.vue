@@ -50,7 +50,6 @@ export default {
 
 main {
     background: url("@/assets/img/15.png") no-repeat left top;
-    background-color: $background-color2 ;
     .container {
         span {
             color: $text-color4;

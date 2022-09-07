@@ -41,7 +41,6 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/general.scss';
 main {
-  background-color: $background-color1!important;
   padding: 100px;
   .container {
     p {

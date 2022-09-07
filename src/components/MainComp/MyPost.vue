@@ -71,7 +71,6 @@ export default {
 @import '@/styles/general.scss';
 
 main {
-    background-color: $background-color2;
     .container {
         margin-top: 100px;
     }

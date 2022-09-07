@@ -3,8 +3,11 @@
     <MyOnlineMarketing />
     <MyTricks />
     <MyFeatures />
-    <MyTestimonial />
-    <MyPost />
+    <div>
+        <MyTestimonial />
+        <MyPost />
+        <MyContact />
+    </div>
   </main>
 </template>
 
@@ -14,6 +17,7 @@ import MyTricks from './MainComp/MyTricks';
 import MyFeatures from './MainComp/MyFeatures';
 import MyTestimonial from './MainComp/MyTestimonial';
 import MyPost from './MainComp/MyPost';
+import MyContact from './MainComp/MyContact';
 
 export default {
     name: 'MyMain',
@@ -22,7 +26,8 @@ export default {
         MyTricks,
         MyFeatures,
         MyTestimonial,
-        MyPost
+        MyPost,
+        MyContact,
     }
 }
 </script>
@@ -30,9 +35,8 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/general.scss';
 
-main {
-    
-    background-color: $background-color2;
+div {  
+    background: linear-gradient(to bottom, #f2f7ff 0%, #ffffff 100%);
 }
 
 </style>
